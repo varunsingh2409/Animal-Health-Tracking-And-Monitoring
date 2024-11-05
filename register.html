@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Health Tracking Registration</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h2>Animal Health Tracking Registration</h2>
+            <form id="registrationForm" onsubmit="return validateForm()">
+                <div class="input-box">
+                    <input type="text" id="ownerName" name="ownerName" required>
+                    <label for="ownerName">Owner Name</label>
+                </div>
+                <div class="input-box">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                    <label for="phoneNumber">Phone Number</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" id="animalName" name="animalName" required>
+                    <label for="animalName">Animal Name</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" id="animalType" name="animalType" required>
+                    <label for="animalType">Animal Type</label>
+                </div>
+                <div class="input-box">
+                    <input type="date" id="animalDOB" name="animalDOB" required>
+                    <label for="animalDOB">Date of Birth</label>
+                </div>
+                <div class="input-box">
+                    <textarea id="healthIssues" name="healthIssues" rows="4"></textarea>
+                    <label for="healthIssues">Known Health Issues (Optional)</label>
+                </div>
+                <div class="submit-btn">
+                    <button type="submit">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script3.js"></script>
+</body>
+</html>

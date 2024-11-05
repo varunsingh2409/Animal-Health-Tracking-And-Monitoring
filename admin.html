@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Animal Health Tracking</title>
+    <link rel="stylesheet" href="admin-styles.css">
+</head>
+<body>
+    <div class="admin-container">
+        <header>
+            <h1>Admin Dashboard</h1>
+            <p>Manage animal health records efficiently</p>
+        </header>
+
+       
+        <section class="control-panel">
+            <button id="addNewRecordButton" class="action-button">Add New Record</button>
+        </section>
+
+      
+        <section id="addRecordSection" class="add-record-form" style="display: none;">
+            <h2>Add New Animal Health Record</h2>
+            <form id="addRecordForm">
+                <div class="input-container">
+                    <input type="text" id="ownerName" placeholder="Owner Name" required>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="animalName" placeholder="Animal Name" required>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="animalType" placeholder="Animal Type" required>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="animalAge" placeholder="Animal Age" required>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="healthIssues" placeholder="Health Issues">
+                </div>
+                <button type="submit" class="submit-button">Add Record</button>
+            </form>
+        </section>
+
+        <!-- Animal Health Records Table -->
+        <section class="table-container">
+            <h2>Animal Health Records</h2>
+            <table id="animalTable">
+                <thead>
+                    <tr id="tableHeader">
+                        <th>Owner Name</th>
+                        <th>Animal Name</th>
+                        <th>Type</th>
+                        <th>Age</th>
+                        <th>Health Issues</th>
+                        <th>Live Health Updates</th> <!-- New column for live updates -->
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="animalTableBody">
+                    <!-- Data will be populated by JavaScript -->
+                </tbody>
+            </table>
+        </section>
+
+    </div>
+
+    <script src="admin-scripts.js"></script>
+</body>
+</html>

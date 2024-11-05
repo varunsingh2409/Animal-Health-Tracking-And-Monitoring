@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #eaf6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://images.pexels.com/photos/338936/pexels-photo-338936.jpeg?cs=srgb&dl=pexels-nejc-kosir-108379-338936.jpg&fm=jpg'); /* Optional: use an animal/nature-themed background image */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    animation: backgroundSlide 10s ease-in-out infinite alternate;
+}
+
+@keyframes backgroundSlide {
+    0% {
+        background-position: center;
+    }
+    100% {
+        background-position: left;
+    }
+}
+
+.container {
+    background-color: rgba(237, 243, 183, 0.9); /* Transparent white background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+h1 {
+    font-size: 26px;
+    color: #264653;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    animation: slideIn 0.6s ease forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+p {
+    color: #6a7a89;
+    margin-bottom: 25px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f4f7f9;
+    transition: border-color 0.3s ease, background-color 0.3s;
+    font-size: 14px;
+    animation: inputSlideIn 0.6s ease forwards;
+}
+
+@keyframes inputSlideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+input:focus {
+    border-color: #2a9d8f;
+    outline: none;
+    background-color: #edf7f4;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.4s ease;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+button:hover::before {
+    left: 100%;
+}
+
+button:hover {
+    background-color: #264653;
+    transform: translateY(-3px);
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #e76f51;
+    animation: fadeInMessage 0.8s ease forwards;
+}
+
+@keyframes fadeInMessage {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #2a9d8f;
+    text-transform: uppercase;
+    animation: fadeIn 1s ease;
+}
+
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.pexels.com/photos/338936/pexels-photo-338936.jpeg?cs=srgb&dl=pexels-nejc-kosir-108379-338936.jpg&fm=jpg'); /* Optional: use a light paw print pattern */
+    background-repeat: no-repeat;
+    background-position: top right;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #6a7a89;
+    text-align: center;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password - Animal Tracking</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+       
+        <h1>Forgot Password</h1>
+        <p>Animal Tracking & Health Monitoring</p>
+
+        <div id="step1">
+            <h2>Step 1: Enter Email or Phone Number</h2>
+            <input type="text" id="contact" placeholder="Enter your email or phone number" />
+            <button onclick="sendOtp()">Send OTP</button>
+        </div>
+
+        <div id="step2" style="display: none;">
+            <h2>Step 2: Verify OTP</h2>
+            <input type="text" id="otp" placeholder="Enter OTP" />
+            <button onclick="verifyOtp()">Verify OTP</button>
+        </div>
+
+        <div id="step3" style="display: none;">
+            <h2>Step 3: Change Password</h2>
+            <input type="password" id="newPassword" placeholder="Enter new password" />
+            <input type="password" id="confirmPassword" placeholder="Confirm new password" />
+            <button onclick="changePassword()">Change Password</button>
+        </div>
+
+        <div id="message" class="message"></div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
+
