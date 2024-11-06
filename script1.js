@@ -8,7 +8,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const password = document.getElementById('password').value;
 
    
-    if (emailOrUsername === "varun singh" && password === "password123") {
+    if (emailOrUsername === "animal" && password === "4518") {
         alert("Login successful!");
 
        
