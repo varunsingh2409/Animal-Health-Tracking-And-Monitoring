@@ -17,19 +17,42 @@
         </header>
       
         <section class="monitoring-section">
+            
+            <div class="card">
+                <h2>Body Temperature</h2>
+                <iframe width="450" height="260" style="border: 1px solid #cccccc;" 
+                    src="https://thingspeak.com/channels/2729396/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&yaxismax=60&yaxismin=0">
+                </iframe>
+            </div>
+
+            
+            <div class="card">
+                <h2> Surrounding Temperature</h2>
+                <iframe width="450" height="260" style="border: 1px solid #cccccc;" 
+                    src="https://thingspeak.com/channels/2729396/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15">
+                </iframe>
+            </div>
+
+        
+
+          
+            <div class="card">
+                <h2>Humidity</h2>
+                <iframe width="450" height="260" style="border: 1px solid #cccccc;" 
+                    src="https://thingspeak.com/channels/2729396/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15">
+                </iframe>
+            </div>
+
+           
             <div class="card">
                 <h2>Heart Rate</h2>
                 <iframe width="450" height="260" style="border: 1px solid #cccccc;" 
-                    src="https://thingspeak.com/channels/2694030/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&yaxismax=60&yaxismin=0">
+                    src="https://thingspeak.com/channels/2729396/charts/4?bgcolor=%23ffffff&color=%234b6587&dynamic=true&results=60&type=line">
                 </iframe>
             </div>
-            <div class="card">
-                <h2>Temperature</h2>
-                <iframe width="450" height="260" style="border: 1px solid #cccccc;" 
-                    src="https://thingspeak.com/channels/2699054/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15">
-                </iframe>
-            </div>
-            <div class="card">
+
+             
+              <div class="card">
                 <h2>Location</h2>
                 <div id="map" class="map-container"></div>
             </div>
@@ -39,3 +62,5 @@
     <script src="scripts11.js"></script>
 </body>
 </html>
+
+
